@@ -36,7 +36,8 @@ Component({
     loadingImage: {
       type: String,
       value: '../../img/loading.png'
-    }
+    },
+
   },
 
   /**
@@ -60,14 +61,20 @@ Component({
         case 'LOADING':
           this.data.statusText = this.properties.loadingText
           this.data.statusImage = this.properties.loadingImage
+          this.data.imgWidth = 30
+          this.data.imgHeight = 30
           break
         case 'EMPTY':
           this.data.statusText = this.properties.emptyText
           this.data.statusImage = this.properties.emptyImage
+          this.data.imgWidth = 150
+          this.data.imgHeight = 150
           break
         case 'ERROR':
           this.data.statusText = this.properties.errorText
           this.data.statusImage = this.properties.errorImage
+          this.data.imgWidth = 150
+          this.data.imgHeight = 150
           break
         case 'CONTENT':
           break
@@ -79,13 +86,9 @@ Component({
         status: status,
         statusText: this.data.statusText,
         statusImage: this.data.statusImage,
+        imgWidth: this.data.imgWidth,
+        imgHeight: this.data.imgHeight
       })
-    },
-    imageLoad:function(e){
-        this.setData({
-          imgWidth: e.detail.width/4,
-          imgHeight: e.detail.height/4
-        })
     }
   }
 })

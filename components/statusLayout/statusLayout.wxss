@@ -1,28 +1,34 @@
 /* components/statusLayout/statusLayout.wxss */
 
-.status-root{
+.status-layout-root{
     width: 100%;
     height: 100%;
     font-family: PingFangSC-Light;
-    font-size: 12px;
+    font-size: 14px;
     color: #8C9393;
     letter-spacing: -0.01px;
     display: flex; justify-content: center; align-items: center;
 }
 
-.view-center{
+.status-main{
     text-align: center;
     color: #8C9393;
 }
 
-.view-center image{
-    /* width: 137px; */
-    /* height: 142px; */
+.status-main image{
+    
     margin-bottom: 10px;
 }
 
+.status-image{
+    width: 137px; 
+    height: 142px; 
+}
+
 .status-image-anim{
-  animation: weuiLoading 1s steps(12, end) infinite;
+  animation: weuiLoading 0.8s steps(12, end) infinite;
+  width: 30px;
+  height: 30px;
 }
 
 @keyframes weuiLoading {

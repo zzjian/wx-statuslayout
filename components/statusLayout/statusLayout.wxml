@@ -1,12 +1,13 @@
 <!--components/statusView/statusView.wxml-->
-<view class="status-root" hidden="{{status=='CONTENT'}}">
-    <view class="view-center">
+<view class="status-layout-root" >
+    <view class="status-main" hidden="{{status=='CONTENT'}}">
         <image class="{{status=='LOADING'?'status-image-anim':''}}" style="width:{{imgWidth}}px; height:{{imgHeight}}px;" src='{{statusImage}}' bindload='imageLoad'></image>
         <view>{{statusText}}</view>
     </view>
-</view>
-<view class="content" hidden="{{status!='CONTENT'}}">
-  <slot></slot>
+
+    <view class="content" hidden="{{status!='CONTENT'}}">
+      <slot></slot>
+    </view>
 </view>
 
 

@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <button bindtap='testStatusLayout'>测试</button>
+    <statusLayout id="statusLayout">
+      <block wx:for="{{datas}}" wx:for-index="id" wx:for-item="item">
+              <view id="{{id}}">{{item}} </view>
+      </block>
+    </statusLayout>
+</view>

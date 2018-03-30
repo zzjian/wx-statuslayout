@@ -3,4 +3,4 @@
 
 ## 效果图
 
-![Aaron Swartz](https://raw.githubusercontent.com/smshen/MarkdownPhotos/master/Res/test.jpg)
+![Aaron Swartz](https://raw.githubusercontent.com/ZzjBeatYou/wx-statuslayout/c126d4b9ce4e61f3a96e9842f0621fa2ca8c5574/preview/preview.gif)

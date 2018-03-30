@@ -3,4 +3,4 @@
 
 ## 效果图
 
-![Aaron Swartz](https://raw.githubusercontent.com/ZzjBeatYou/wx-statuslayout/e51a6efa4f0185d429fceee3be11937ffaadded0/preview/preview.gif)
+![Aaron Swartz](https://raw.githubusercontent.com/ZzjBeatYou/wx-statuslayout/ce5b716141ec34ca1f16d07a7d21dca13692df2b/preview/preview.gif)

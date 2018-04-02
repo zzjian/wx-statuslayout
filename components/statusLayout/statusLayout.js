@@ -15,19 +15,35 @@ Component({
     },
     emptyImage:{
       type: String,
-      value: 'http://p3gi5474i.bkt.clouddn.com/data_empty.jpg' 
+      value: '../../img/empty.png' 
     },
     emptyText: {
       type: String,
       value: '没有数据哦!'
     },
+    emptyImageWidth: {
+      type: Number,
+      value: 64
+    },
+    emptyImageHeight: {
+      type: Number,
+      value: 64
+    },
     errorImage: {
       type: String,
-      value: 'http://p3gi5474i.bkt.clouddn.com/data_empty.jpg'
+      value: '../../img/error.png'
     },
     errorText: {
       type: String,
       value: '操作失败, 请稍后重试!'
+    },
+    errorImageWidth: {
+      type: Number,
+      value: 64
+    },
+    errorImageHeight: {
+      type: Number,
+      value: 64
     },
     loadingText:{
       type: String,
@@ -37,7 +53,14 @@ Component({
       type: String,
       value: '../../img/loading.png'
     },
-
+    loadingImageWidth: {
+      type: Number,
+      value: 40
+    },
+    loadingImageHeight: {
+      type: Number,
+      value: 40
+    },
   },
 
   /**
@@ -61,20 +84,20 @@ Component({
         case 'LOADING':
           this.data.statusText = this.properties.loadingText
           this.data.statusImage = this.properties.loadingImage
-          this.data.imgWidth = 30
-          this.data.imgHeight = 30
+          this.data.imgWidth = this.properties.loadingImageWidth
+          this.data.imgHeight = this.properties.loadingImageHeight
           break
         case 'EMPTY':
           this.data.statusText = this.properties.emptyText
           this.data.statusImage = this.properties.emptyImage
-          this.data.imgWidth = 150
-          this.data.imgHeight = 150
+          this.data.imgWidth = this.properties.emptyImageWidth
+          this.data.imgHeight = this.properties.emptyImageHeight
           break
         case 'ERROR':
           this.data.statusText = this.properties.errorText
           this.data.statusImage = this.properties.errorImage
-          this.data.imgWidth = 150
-          this.data.imgHeight = 150
+          this.data.imgWidth = this.properties.errorImageWidth
+          this.data.imgHeight = this.properties.errorImageHeight
           break
         case 'CONTENT':
           break

@@ -4,7 +4,7 @@ const app = getApp()
 var statusLayout
 Page({
   data: {
-    datas: ['Hello World','ad','ads','asd'],
+    datas: ['测试数据1', '测试数据2', '测试数据3', '测试数据4', '测试数据5'],
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')

@@ -31,6 +31,7 @@
 状态类型：`CONTENT`、`ERROR`、`EMPTY`、`LOADING`
 
 ### 在不同页面使用不同的状态图片及文案
+
     ``` json
     <statusLayout id="statusLayout" status='CONTENT' errorImage='url' errorText='错误文案' emptyImage='url' emptyText='空文案'>
         //内容

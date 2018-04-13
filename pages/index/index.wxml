@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="container">
   <button bindtap='testStatusLayout'>测试</button>
-    <statusLayout id="statusLayout" status='CONTENT' rootStyle="height:{{system.windowHeight-50}}px;">
+    <statusLayout id="statusLayout" status='CONTENT' rootStyle="height:{{system.windowHeight-50}}px;" errorText="加载失败, 请点击重试" bindOnClickListener='testStatusLayout'>
       <block wx:for="{{datas}}" wx:for-index="id" wx:for-item="item">
               <view id="{{id}}">{{item}} </view>
       </block>

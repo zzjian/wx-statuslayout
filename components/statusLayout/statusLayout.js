@@ -132,7 +132,9 @@ Component({
       this.setData({
         status: "CONTENT"
       })
+    },
+    onClickListener: function(res) {
+      this.triggerEvent('OnClickListener', { status: this.data.status }, {})
     }
-
   }
 })

@@ -23,6 +23,7 @@ Page({
   onLoad: function () {
   },
   testStatusLayout: function(e) {
+    console.log(e)
     statusLayout.showLoading()
     // statusLayout.setStatus("LOADING")
     setTimeout(function(){

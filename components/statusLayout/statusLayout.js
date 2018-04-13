@@ -8,14 +8,6 @@ Component({
       type: String,
       value:''
     },
-    rootHeight:{
-      type: Number,
-      value: -1
-    },
-    rootWidth: {
-      type: Number,
-      value: -1
-    },
     status: {
       type: String,
       value: 'CONTENT',  //LOADING、CONTENT、EMPTY、ERROR

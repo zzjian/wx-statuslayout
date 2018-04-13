@@ -6,14 +6,14 @@
 ![](https://raw.githubusercontent.com/ZzjBeatYou/wx-statuslayout/4b84a5513cf5e9a810cc56d322c29830b39b4fdb/preview/preview.gif)
 
 ## 自定义属性
-- `rootStyle` 根容器样式, 可用来设置组件宽高等
+- `rootStyle` 根容器样式, 可用来设置组件宽高等
 - `status` 默认状态
-- `emptyImage` 无数据时的图片
+- `emptyImage` 无数据时的图片
 - `emptyText` 无数据时的文案
-- `emptyImageWidth` 无数据时图片宽度
+- `emptyImageWidth` 无数据时图片宽度
 - `emptyImageHeight` 无数据时图片高度
-- `errorImage`
-- `errorText`
+- `errorImage` 发生错误时的图片
+- `errorText` 发生错误时的文案
 - `errorImageWidth`
 - `errorImageHeight`
 - `loadingText`
@@ -46,8 +46,8 @@
     
     2. 切换布局`(两种切换布局的方法)`
 
-    - 一个方法通过不同参数切换
-        ```json
+    - 一个方法通过不同参数切换
+        ```js
         statusLayout.setStatus("LOADING")
 
         statusLayout.setStatus("CONTENT")

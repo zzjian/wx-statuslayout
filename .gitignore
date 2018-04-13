@@ -7,3 +7,4 @@ jsconfig.json
 project.config.json
 .vscode/
 typings/
+.DS_Store

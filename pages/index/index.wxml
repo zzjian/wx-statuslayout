@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="container">
   <button bindtap='testStatusLayout'>测试</button>
-    <statusLayout id="statusLayout" status='CONTENT'>
+    <statusLayout id="statusLayout" status='CONTENT' rootStyle="height:{{system.windowHeight-50}}px;">
       <block wx:for="{{datas}}" wx:for-index="id" wx:for-item="item">
               <view id="{{id}}">{{item}} </view>
       </block>

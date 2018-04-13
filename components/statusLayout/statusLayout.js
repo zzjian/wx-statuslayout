@@ -4,6 +4,18 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    rootStyle: {
+      type: String,
+      value:''
+    },
+    rootHeight:{
+      type: Number,
+      value: -1
+    },
+    rootWidth: {
+      type: Number,
+      value: -1
+    },
     status: {
       type: String,
       value: 'CONTENT',  //LOADING、CONTENT、EMPTY、ERROR
@@ -79,39 +91,56 @@ Component({
    */
   methods: {
     setStatus: function(status) {
-      var anim = ''
       switch(status) {
         case 'LOADING':
-          this.data.statusText = this.properties.loadingText
-          this.data.statusImage = this.properties.loadingImage
-          this.data.imgWidth = this.properties.loadingImageWidth
-          this.data.imgHeight = this.properties.loadingImageHeight
+          this.showLoading()
           break
         case 'EMPTY':
-          this.data.statusText = this.properties.emptyText
-          this.data.statusImage = this.properties.emptyImage
-          this.data.imgWidth = this.properties.emptyImageWidth
-          this.data.imgHeight = this.properties.emptyImageHeight
+          this.showEmpty()
           break
         case 'ERROR':
-          this.data.statusText = this.properties.errorText
-          this.data.statusImage = this.properties.errorImage
-          this.data.imgWidth = this.properties.errorImageWidth
-          this.data.imgHeight = this.properties.errorImageHeight
+          this.showError()
           break
         case 'CONTENT':
+          this.showContent()
           break
         default:
           console.log("error: 未找到该status")
           break
       }
+    },
+    showLoading: function(){
       this.setData({
-        status: status,
-        statusText: this.data.statusText,
-        statusImage: this.data.statusImage,
-        imgWidth: this.data.imgWidth,
-        imgHeight: this.data.imgHeight
+        status: "LOADING",
+        statusText: this.properties.loadingText,
+        statusImage: this.properties.loadingImage,
+        imgWidth: this.properties.loadingImageWidth,
+        imgHeight: this.properties.loadingImageHeight
+      })
+    },
+    showEmpty: function(){
+      this.setData({
+        status: "EMPTY",
+        statusText: this.properties.emptyText,
+        statusImage: this.properties.emptyImage,
+        imgWidth: this.properties.emptyImageWidth,
+        imgHeight: this.properties.emptyImageHeight
+      })
+    },
+    showError: function(){
+      this.setData({
+        status: "ERROR",
+        statusText: this.properties.errorText,
+        statusImage: this.properties.errorImage,
+        imgWidth: this.properties.errorImageWidth,
+        imgHeight: this.properties.errorImageHeight
+      })
+    },
+    showContent: function(){
+      this.setData({
+        status: "CONTENT"
       })
     }
+
   }
 })

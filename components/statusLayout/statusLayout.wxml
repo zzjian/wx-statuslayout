@@ -1,5 +1,5 @@
-<!--components/statusView/statusView.wxml-->
-<view class="status-layout-root" >
+<!--components/statusLayout/statusLayout.wxml -->
+<view class="status-layout-root" style="{{rootStyle}}">
     <view class="status-main" hidden="{{status=='CONTENT'}}">
         <image class="{{status=='LOADING'?'status-image-anim':''}}" style="width:{{imgWidth}}px; height:{{imgHeight}}px;" src='{{statusImage}}'></image>
         <view>{{statusText}}</view>

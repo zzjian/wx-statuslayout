@@ -3,7 +3,7 @@
 
 ## 效果图
 
-![](https://raw.githubusercontent.com/ZzjBeatYou/wx-statuslayout/4b84a5513cf5e9a810cc56d322c29830b39b4fdb/preview/preview.gif)
+![](https://raw.githubusercontent.com/zzjian/wx-statuslayout/0acbee12efe199d5d395d570728a5141eb38c5e4/preview/preview.gif)
 
 ## 自定义属性
 - `rootStyle` 根容器样式, 可用来设置组件宽高等
@@ -68,10 +68,18 @@
         statusLayout.showEmpty()
          
         ```
+    3. 绑定点击重新加载的回调
+        ``` js
+        <statusLayout id="statusLayout" errorText="加载失败, 请点击重试" bindOnClickListener='testStatusLayout'>
+
+        //testStatusLayout 为页面js文件中加载数据的方法
+        ```
 
 ### 在不同页面设置不同的状态图片及文案等
-    <statusLayout id="statusLayout" status='LOADING' errorImage='url' errorText='错误文案' emptyImage='url' emptyText='空文案' rootStyle="height:{{system.windowHeight-50}}px;">
-        //内容
-    </statusLayout>
+``` js
+<statusLayout id="statusLayout" status='LOADING' errorImage='url' errorText='错误文案' emptyImage='url' emptyText='空文案' rootStyle="height:{{system.windowHeight-50}}px;">
+    //内容
+</statusLayout>
+```
 
 

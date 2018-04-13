@@ -3,3 +3,5 @@
 .idea
 node_modules
 npm-debug.log
+jsconfig.json
+project.config.json

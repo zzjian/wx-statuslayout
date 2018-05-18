@@ -8,3 +8,4 @@ project.config.json
 .vscode/
 typings/
 .DS_Store
+*.DS_Store

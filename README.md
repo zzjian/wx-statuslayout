@@ -1,9 +1,9 @@
 # wx-statuslayout
-微信小程序页面状态切换组件
+微信小程序页面状态切换组件, 如果对您有帮助的话, 就赏个star吧~
 
 ## 效果图
 
-![](https://raw.githubusercontent.com/zzjian/wx-statuslayout/0acbee12efe199d5d395d570728a5141eb38c5e4/preview/preview.gif)
+![](https://raw.githubusercontent.com/zzjian/wx-statuslayout/0c87f17bd07381d82192200f1434aa74b1266872/preview/preview.gif)
 
 ## 自定义属性
 - `rootStyle` 根容器样式, 可用来设置组件宽高等
@@ -14,12 +14,12 @@
 - `emptyImageHeight` 无数据时图片高度
 - `errorImage` 发生错误时的图片
 - `errorText` 发生错误时的文案
-- `errorImageWidth`
-- `errorImageHeight`
-- `loadingText`
-- `loadingImage`
-- `loadingImageWidth`
-- `loadingImageHeight`
+- `errorImageWidth` 错误图片宽
+- `errorImageHeight` 错误图片高
+- `loadingText` 加载文案
+- `loadingImage`  加载图片
+- `loadingImageWidth` 加载图片宽
+- `loadingImageHeight` 加载图片高
 
 ## 使用
 1. 将`statusLayout`组件拷贝到自己项目中
